@@ -182,7 +182,7 @@ public class MainActivity extends Activity {
 			db.update(
 				"messages",							// テーブル名
 				values,								// 値群。
-				"_id = ?",							// 条件。 _id = 3, 4 のレコードを更新
+				"_id = ?",							// 条件。
 				new String[]{ String.valueOf(id) }	// where args
 			);
 			addResult("UPDATE 成功");
@@ -208,7 +208,7 @@ public class MainActivity extends Activity {
 		try{
 			db.delete(
 				"messages",							// テーブル名
-				"_id = ?",							// 条件。 _id = 3, 4 のレコードを削除
+				"_id = ?",							// 条件。
 				new String[]{ String.valueOf(id) }	// where args
 			);
 			addResult("DELETE 成功");
